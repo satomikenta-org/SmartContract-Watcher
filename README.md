@@ -1,2 +1,13 @@
 
 Smart Contract Event Watcher
+
+.env 
+```
+MYSQL_HOST=""
+MYSQL_USER=""
+MYSQL_PASSWORD=""
+MYSQL_PORT=""
+MYSQL_DATABASE=""
+CONTRACT_ADDRESS=""
+GETH_URL=""
+```
