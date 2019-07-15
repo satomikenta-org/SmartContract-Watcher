@@ -1,0 +1,7 @@
+version: '3'
+	services: 
+	  eth-listener:
+	    build: .
+	    restart: always
+	    volumes:
+	    - /home/ec2-user/app/eth-listener/log/:/usr/app/log/ 
