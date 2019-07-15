@@ -1,3 +1,6 @@
+const log4js = require('log4js');
+log4js.configure('./log4js.json');
+const logger = log4js.getLogger("app");
 const contract = require('../config/contract');
 const web3 = require('../config/web3');
 
@@ -12,7 +15,7 @@ const makeEventWatcher = (eventName, callback) => {
     if (!error) {
       callback(log);
     } else {
-      console.log(error);
+      logger.error('Failed to Get EventLog', error);
     }
   });
 };
